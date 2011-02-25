@@ -1,0 +1,893 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=utf-8" />
+<title>Class: GApps::RequestMessage</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (R)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../GApps.html" title="GApps (module)">GApps</a></span></span>
+     &raquo; 
+    <span class="title">RequestMessage</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: GApps::RequestMessage
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Document</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Document</li>
+          
+            <li class="next">GApps::RequestMessage</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/gapps/provisioningapi.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>
+:nodoc:
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div>
+
+  
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#about_email_list-instance_method" title="#about_email_list (instance method)">- (Object) <strong>about_email_list</strong>(email_list) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+adds &lt;apps:emailList&gt; element in the message body.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#about_group-instance_method" title="#about_group (instance method)">- (Object) <strong>about_group</strong>(group_id, properties) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+adds &lt;apps:property&gt; element in the message body for a group.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#about_login-instance_method" title="#about_login (instance method)">- (Object) <strong>about_login</strong>(user_name, passwd = nil, hash_function_name = nil, admin = nil, suspended = nil, change_passwd_at_next_login = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+adds &lt;apps:login&gt; element in the message body.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#about_member-instance_method" title="#about_member (instance method)">- (Object) <strong>about_member</strong>(email_address) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+adds &lt;apps:property&gt; element in the message body for a member.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#about_name-instance_method" title="#about_name (instance method)">- (Object) <strong>about_name</strong>(family_name, given_name) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+adds &lt;apps:name&gt; in the message body.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#about_nickname-instance_method" title="#about_nickname (instance method)">- (Object) <strong>about_nickname</strong>(name) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+adds &lt;apps:nickname&gt; in the message body.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#about_owner-instance_method" title="#about_owner (instance method)">- (Object) <strong>about_owner</strong>(email_address) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+adds &lt;apps:property&gt; element in the message body for an owner.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#about_quota-instance_method" title="#about_quota (instance method)">- (Object) <strong>about_quota</strong>(limit) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+adds &lt;apps:quota&gt; in the message body.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#about_who-instance_method" title="#about_who (instance method)">- (Object) <strong>about_who</strong>(email) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+adds &lt;gd:who&gt; in the message body.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_path-instance_method" title="#add_path (instance method)">- (Object) <strong>add_path</strong>(url) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+adds &lt;atom:id&gt; element in the message body.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (RequestMessage) <strong>initialize</strong> </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+creates the object and initiates the construction.
+</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="GApps::RequestMessage (class)">RequestMessage</a></span></tt>) <strong>initialize</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+creates the object and initiates the construction
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+762
+763
+764
+765
+766
+767
+768</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 762</span>
+
+<span class='def def kw'>def</span> <span class='initialize identifier id'>initialize</span>
+<span class='super super kw'>super</span> <span class='string val'>'&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;'</span> 
+<span class='self self kw'>self</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;atom:entry&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;xmlns:apps&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;http://schemas.google.com/apps/2006&quot;</span><span class='comma token'>,</span>
+  <span class='string val'>&quot;xmlns:gd&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;http://schemas.google.com/g/2005&quot;</span><span class='comma token'>,</span>
+  <span class='string val'>&quot;xmlns:atom&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;http://www.w3.org/2005/Atom&quot;</span><span class='rbrace token'>}</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;atom:category&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;scheme&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;http://schemas.google.com/g/2005#kind&quot;</span><span class='rbrace token'>}</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="about_email_list-instance_method">
+  
+    - (<tt>Object</tt>) <strong>about_email_list</strong>(email_list) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+adds &lt;apps:emailList&gt; element in the message body.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+777
+778
+779
+780</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 777</span>
+
+<span class='def def kw'>def</span> <span class='about_email_list identifier id'>about_email_list</span><span class='lparen token'>(</span><span class='email_list identifier id'>email_list</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/atom:category&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;term&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;http://schemas.google.com/apps/2006#emailList&quot;</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:emailList&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;name&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='email_list identifier id'>email_list</span> <span class='rbrace token'>}</span> 
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="about_group-instance_method">
+  
+    - (<tt>Object</tt>) <strong>about_group</strong>(group_id, properties) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+adds &lt;apps:property&gt; element in the message body for a group.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+783
+784
+785
+786
+787
+788
+789</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 783</span>
+
+<span class='def def kw'>def</span> <span class='about_group identifier id'>about_group</span><span class='lparen token'>(</span><span class='group_id identifier id'>group_id</span><span class='comma token'>,</span> <span class='properties identifier id'>properties</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/atom:category&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;term&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;http://schemas.google.com/apps/2006#emailList&quot;</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:property&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;name&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;groupId&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;value&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='group_id identifier id'>group_id</span> <span class='rbrace token'>}</span> 
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:property&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;name&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;groupName&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;value&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='properties identifier id'>properties</span><span class='lbrack token'>[</span><span class='integer val'>0</span><span class='rbrack token'>]</span> <span class='rbrace token'>}</span> 
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:property&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;name&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;description&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;value&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='properties identifier id'>properties</span><span class='lbrack token'>[</span><span class='integer val'>1</span><span class='rbrack token'>]</span> <span class='rbrace token'>}</span> 
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:property&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;name&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;emailPermission&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;value&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='properties identifier id'>properties</span><span class='lbrack token'>[</span><span class='integer val'>2</span><span class='rbrack token'>]</span> <span class='rbrace token'>}</span> 
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="about_login-instance_method">
+  
+    - (<tt>Object</tt>) <strong>about_login</strong>(user_name, passwd = nil, hash_function_name = nil, admin = nil, suspended = nil, change_passwd_at_next_login = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+adds &lt;apps:login&gt; element in the message body. warning : if valued
+admin, suspended, or change_passwd_at_next_login must be the STRINGS
+&quot;true&quot; or &quot;false&quot;, not the boolean true or false when
+needed to construct the message, should always been used before other
+&quot;about_&quot; methods so that the category tag can be overwritten only
+values permitted for hash_function_function_name : &quot;SHA-1&quot;,
+&quot;MD5&quot; or nil
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+808
+809
+810
+811
+812
+813
+814
+815
+816
+817</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 808</span>
+
+<span class='def def kw'>def</span> <span class='about_login identifier id'>about_login</span><span class='lparen token'>(</span><span class='user_name identifier id'>user_name</span><span class='comma token'>,</span> <span class='passwd identifier id'>passwd</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='hash_function_name identifier id'>hash_function_name</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='admin identifier id'>admin</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='suspended identifier id'>suspended</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='change_passwd_at_next_login identifier id'>change_passwd_at_next_login</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/atom:category&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;term&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;http://schemas.google.com/apps/2006#user&quot;</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:login&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;userName&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='user_name identifier id'>user_name</span> <span class='rbrace token'>}</span> 
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;password&quot;</span><span class='comma token'>,</span> <span class='passwd identifier id'>passwd</span><span class='rparen token'>)</span> <span class='if if_mod kw'>if</span> <span class='not not kw'>not</span> <span class='passwd identifier id'>passwd</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;hashFunctionName&quot;</span><span class='comma token'>,</span> <span class='hash_function_name identifier id'>hash_function_name</span><span class='rparen token'>)</span> <span class='if if_mod kw'>if</span> <span class='not not kw'>not</span> <span class='hash_function_name identifier id'>hash_function_name</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;admin&quot;</span><span class='comma token'>,</span> <span class='admin identifier id'>admin</span><span class='rparen token'>)</span> <span class='if if_mod kw'>if</span> <span class='not not kw'>not</span> <span class='admin identifier id'>admin</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;suspended&quot;</span><span class='comma token'>,</span> <span class='suspended identifier id'>suspended</span><span class='rparen token'>)</span> <span class='if if_mod kw'>if</span> <span class='not not kw'>not</span> <span class='suspended identifier id'>suspended</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;changePasswordAtNextLogin&quot;</span><span class='comma token'>,</span> <span class='change_passwd_at_next_login identifier id'>change_passwd_at_next_login</span><span class='rparen token'>)</span> <span class='if if_mod kw'>if</span> <span class='not not kw'>not</span> <span class='change_passwd_at_next_login identifier id'>change_passwd_at_next_login</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+  <span class='return return kw'>return</span> <span class='self self kw'>self</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="about_member-instance_method">
+  
+    - (<tt>Object</tt>) <strong>about_member</strong>(email_address) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+adds &lt;apps:property&gt; element in the message body for a member.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+792
+793
+794
+795</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 792</span>
+
+<span class='def def kw'>def</span> <span class='about_member identifier id'>about_member</span><span class='lparen token'>(</span><span class='email_address identifier id'>email_address</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/atom:category&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;term&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;http://schemas.google.com/apps/2006#user&quot;</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:property&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;name&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;memberId&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;value&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='email_address identifier id'>email_address</span> <span class='rbrace token'>}</span> 
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="about_name-instance_method">
+  
+    - (<tt>Object</tt>) <strong>about_name</strong>(family_name, given_name) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+adds &lt;apps:name&gt; in the message body.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+827
+828
+829
+830</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 827</span>
+
+<span class='def def kw'>def</span> <span class='about_name identifier id'>about_name</span><span class='lparen token'>(</span><span class='family_name identifier id'>family_name</span><span class='comma token'>,</span> <span class='given_name identifier id'>given_name</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:name&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;familyName&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='family_name identifier id'>family_name</span><span class='comma token'>,</span> <span class='string val'>&quot;givenName&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='given_name identifier id'>given_name</span> <span class='rbrace token'>}</span> 
+  <span class='return return kw'>return</span> <span class='self self kw'>self</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="about_nickname-instance_method">
+  
+    - (<tt>Object</tt>) <strong>about_nickname</strong>(name) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+adds &lt;apps:nickname&gt; in the message body.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+833
+834
+835
+836
+837</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 833</span>
+
+<span class='def def kw'>def</span> <span class='about_nickname identifier id'>about_nickname</span><span class='lparen token'>(</span><span class='name identifier id'>name</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/atom:category&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;term&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;http://schemas.google.com/apps/2006#nickname&quot;</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:nickname&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;name&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='name identifier id'>name</span><span class='rbrace token'>}</span> 
+  <span class='return return kw'>return</span> <span class='self self kw'>self</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="about_owner-instance_method">
+  
+    - (<tt>Object</tt>) <strong>about_owner</strong>(email_address) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+adds &lt;apps:property&gt; element in the message body for an owner.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+798
+799
+800
+801</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 798</span>
+
+<span class='def def kw'>def</span> <span class='about_owner identifier id'>about_owner</span><span class='lparen token'>(</span><span class='email_address identifier id'>email_address</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/atom:category&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_attribute identifier id'>add_attribute</span><span class='lparen token'>(</span><span class='string val'>&quot;term&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;http://schemas.google.com/apps/2006#user&quot;</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:property&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;name&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;email&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;value&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='email_address identifier id'>email_address</span> <span class='rbrace token'>}</span> 
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="about_quota-instance_method">
+  
+    - (<tt>Object</tt>) <strong>about_quota</strong>(limit) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+adds &lt;apps:quota&gt; in the message body. limit in MB: integer
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+821
+822
+823
+824</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 821</span>
+
+<span class='def def kw'>def</span> <span class='about_quota identifier id'>about_quota</span><span class='lparen token'>(</span><span class='limit identifier id'>limit</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;apps:quota&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;limit&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='limit identifier id'>limit</span> <span class='rbrace token'>}</span>  
+  <span class='return return kw'>return</span> <span class='self self kw'>self</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="about_who-instance_method">
+  
+    - (<tt>Object</tt>) <strong>about_who</strong>(email) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+adds &lt;gd:who&gt; in the message body.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+840
+841
+842
+843</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 840</span>
+
+<span class='def def kw'>def</span> <span class='about_who identifier id'>about_who</span><span class='lparen token'>(</span><span class='email identifier id'>email</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;gd:who&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>&quot;email&quot;</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='email identifier id'>email</span> <span class='rbrace token'>}</span> 
+  <span class='return return kw'>return</span> <span class='self self kw'>self</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="add_path-instance_method">
+  
+    - (<tt>Object</tt>) <strong>add_path</strong>(url) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+adds &lt;atom:id&gt; element in the message body. Url is inserted as a
+text.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+771
+772
+773
+774</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 771</span>
+
+<span class='def def kw'>def</span> <span class='add_path identifier id'>add_path</span><span class='lparen token'>(</span><span class='url identifier id'>url</span><span class='rparen token'>)</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='add_element identifier id'>add_element</span> <span class='string val'>&quot;atom:id&quot;</span>
+  <span class='self self kw'>self</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;atom:entry/atom:id&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='text identifier id'>text</span> <span class='assign token'>=</span> <span class='url identifier id'>url</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Fri Feb 25 09:17:56 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.4 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

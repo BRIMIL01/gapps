@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=utf-8" />
+<title>Class: GApps::ReportingApi</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (R)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../GApps.html" title="GApps (module)">GApps</a></span></span>
+     &raquo; 
+    <span class="title">ReportingApi</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: GApps::ReportingApi
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">GApps::ReportingApi</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/gapps/reportingapi.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="google_host-classvariable" class="">@@google_host =
+          
+        </dt>
+        <dd><pre class="code"><span class='string val'>'www.google.com'</span>
+</pre></dd>
+      
+        <dt id="google_port-classvariable" class="">@@google_port =
+          
+        </dt>
+        <dd><pre class="code"><span class='integer val'>443</span>
+</pre></dd>
+      
+    </dl>
+  
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_report-instance_method" title="#get_report (instance method)">- (Object) <strong>get_report</strong>(name, date, page = 1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (ReportingApi) <strong>initialize</strong>(mail, passwd, proxy = nil, proxy_port = nil, proxy_user = nil, proxy_passwd = nil) </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+http://code.google.com/apis/apps/reporting/google_apps_reporting_api.html.
+</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="GApps::ReportingApi (class)">ReportingApi</a></span></tt>) <strong>initialize</strong>(mail, passwd, proxy = nil, proxy_port = nil, proxy_user = nil, proxy_passwd = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+http://code.google.com/apis/apps/reporting/google_apps_reporting_api.html
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10
+11
+12
+13</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/reportingapi.rb', line 8</span>
+
+<span class='def def kw'>def</span> <span class='initialize identifier id'>initialize</span><span class='lparen token'>(</span><span class='mail identifier id'>mail</span><span class='comma token'>,</span> <span class='passwd identifier id'>passwd</span><span class='comma token'>,</span> <span class='proxy identifier id'>proxy</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='proxy_port identifier id'>proxy_port</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='proxy_user identifier id'>proxy_user</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='proxy_passwd identifier id'>proxy_passwd</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='@domain ivar id'>@domain</span> <span class='assign token'>=</span> <span class='mail identifier id'>mail</span><span class='dot token'>.</span><span class='split identifier id'>split</span><span class='lparen token'>(</span><span class='string val'>'@'</span><span class='rparen token'>)</span><span class='lbrack token'>[</span><span class='integer val'>1</span><span class='rbrack token'>]</span>
+  <span class='conn identifier id'>conn</span> <span class='assign token'>=</span> <span class='Connection constant id'>Connection</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='@@google_host ivar id'>@@google_host</span><span class='comma token'>,</span> <span class='@@google_port ivar id'>@@google_port</span><span class='comma token'>,</span> <span class='mail identifier id'>mail</span><span class='comma token'>,</span> <span class='passwd identifier id'>passwd</span><span class='comma token'>,</span> <span class='proxy identifier id'>proxy</span><span class='comma token'>,</span> <span class='proxy_port identifier id'>proxy_port</span><span class='comma token'>,</span> <span class='proxy_user identifier id'>proxy_user</span><span class='comma token'>,</span> <span class='proxy_passwd identifier id'>proxy_passwd</span><span class='rparen token'>)</span>
+  <span class='@connection ivar id'>@connection</span> <span class='assign token'>=</span> <span class='conn identifier id'>conn</span>
+  <span class='return return kw'>return</span> <span class='@connection ivar id'>@connection</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="get_report-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_report</strong>(name, date, page = 1) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/reportingapi.rb', line 15</span>
+
+<span class='def def kw'>def</span> <span class='get_report identifier id'>get_report</span><span class='lparen token'>(</span><span class='name identifier id'>name</span><span class='comma token'>,</span> <span class='date identifier id'>date</span><span class='comma token'>,</span> <span class='page identifier id'>page</span><span class='assign token'>=</span><span class='integer val'>1</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GReportMessage constant id'>GReportMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_parameter identifier id'>add_parameter</span><span class='lparen token'>(</span><span class='string val'>&quot;type&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;Report&quot;</span><span class='rparen token'>)</span>
+  <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='check_token identifier id'>check_token</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_parameter identifier id'>add_parameter</span><span class='lparen token'>(</span><span class='string val'>&quot;token&quot;</span><span class='comma token'>,</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='token identifier id'>token</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_parameter identifier id'>add_parameter</span><span class='lparen token'>(</span><span class='string val'>&quot;domain&quot;</span><span class='comma token'>,</span> <span class='@domain ivar id'>@domain</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_parameter identifier id'>add_parameter</span><span class='lparen token'>(</span><span class='string val'>&quot;date&quot;</span><span class='comma token'>,</span> <span class='date identifier id'>date</span><span class='dot token'>.</span><span class='to_date identifier id'>to_date</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_parameter identifier id'>add_parameter</span><span class='lparen token'>(</span><span class='string val'>&quot;page&quot;</span><span class='comma token'>,</span> <span class='page identifier id'>page</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_parameter identifier id'>add_parameter</span><span class='lparen token'>(</span><span class='string val'>&quot;reportType&quot;</span><span class='comma token'>,</span> <span class='string val'>&quot;daily&quot;</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_parameter identifier id'>add_parameter</span><span class='lparen token'>(</span><span class='string val'>&quot;reportName&quot;</span><span class='comma token'>,</span> <span class='name identifier id'>name</span><span class='rparen token'>)</span>
+
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='lbrace token'>{</span><span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'POST'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;/hosted/services/v1.0/reports/ReportingData&quot;</span> <span class='rbrace token'>}</span><span class='comma token'>,</span> <span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>'Content-Type'</span><span class='assign token'>=</span><span class='gt op'>&gt;</span><span class='string val'>'text/xml'</span><span class='rbrace token'>}</span><span class='comma token'>,</span> <span class='false false kw'>false</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Fri Feb 25 09:17:56 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.4 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

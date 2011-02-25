@@ -1,0 +1,856 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=utf-8" />
+<title>Class: GApps::UserEntry</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (U)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../GApps.html" title="GApps (module)">GApps</a></span></span>
+     &raquo; 
+    <span class="title">UserEntry</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: GApps::UserEntry
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">GApps::UserEntry</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/gapps/provisioningapi.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>
+UserEntry object.
+</p>
+<p>
+Handles API responses relative to a user
+</p>
+<p>
+Attributes : username : string given_name : string family_name : string
+suspended : string &quot;true&quot; or string &quot;false&quot;
+ip_whitelisted : string &quot;true&quot; or string &quot;false&quot; admin
+: string &quot;true&quot; or string &quot;false&quot;
+change_password_at_next_login : string &quot;true&quot; or string
+&quot;false&quot; agreed_to_terms : string &quot;true&quot; or string
+&quot;false&quot; quota_limit : string (value in MB)
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div>
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#admin-instance_method" title="#admin (instance method)">- (Object) <strong>admin</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns the value of attribute admin.
+</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#agreed_to_terms-instance_method" title="#agreed_to_terms (instance method)">- (Object) <strong>agreed_to_terms</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns the value of attribute agreed_to_terms.
+</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#change_password_at_next_login-instance_method" title="#change_password_at_next_login (instance method)">- (Object) <strong>change_password_at_next_login</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns the value of attribute change_password_at_next_login.
+</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#family_name-instance_method" title="#family_name (instance method)">- (Object) <strong>family_name</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns the value of attribute family_name.
+</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#given_name-instance_method" title="#given_name (instance method)">- (Object) <strong>given_name</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns the value of attribute given_name.
+</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ip_whitelisted-instance_method" title="#ip_whitelisted (instance method)">- (Object) <strong>ip_whitelisted</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns the value of attribute ip_whitelisted.
+</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#quota_limit-instance_method" title="#quota_limit (instance method)">- (Object) <strong>quota_limit</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns the value of attribute quota_limit.
+</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#suspended-instance_method" title="#suspended (instance method)">- (Object) <strong>suspended</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns the value of attribute suspended.
+</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#username-instance_method" title="#username (instance method)">- (Object) <strong>username</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns the value of attribute username.
+</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (UserEntry) <strong>initialize</strong>(entry) </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+UserEntry constructor.
+</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="GApps::UserEntry (class)">UserEntry</a></span></tt>) <strong>initialize</strong>(entry) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+UserEntry constructor. Needs a REXML::Element &lt;entry&gt; as parameter
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 664</span>
+
+<span class='def def kw'>def</span> <span class='initialize identifier id'>initialize</span><span class='lparen token'>(</span><span class='entry identifier id'>entry</span><span class='rparen token'>)</span> <span class='comment val'>#:nodoc:</span>
+  <span class='@family_name ivar id'>@family_name</span> <span class='assign token'>=</span> <span class='entry identifier id'>entry</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;apps:name&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='attributes identifier id'>attributes</span><span class='lbrack token'>[</span><span class='string val'>&quot;familyName&quot;</span><span class='rbrack token'>]</span>
+  <span class='@given_name ivar id'>@given_name</span> <span class='assign token'>=</span> <span class='entry identifier id'>entry</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;apps:name&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='attributes identifier id'>attributes</span><span class='lbrack token'>[</span><span class='string val'>&quot;givenName&quot;</span><span class='rbrack token'>]</span>
+  <span class='@username ivar id'>@username</span> <span class='assign token'>=</span> <span class='entry identifier id'>entry</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='attributes identifier id'>attributes</span><span class='lbrack token'>[</span><span class='string val'>&quot;userName&quot;</span><span class='rbrack token'>]</span>
+  <span class='@suspended ivar id'>@suspended</span> <span class='assign token'>=</span> <span class='entry identifier id'>entry</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='attributes identifier id'>attributes</span><span class='lbrack token'>[</span><span class='string val'>&quot;suspended&quot;</span><span class='rbrack token'>]</span>
+  <span class='@ip_whitelisted ivar id'>@ip_whitelisted</span> <span class='assign token'>=</span> <span class='entry identifier id'>entry</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='attributes identifier id'>attributes</span><span class='lbrack token'>[</span><span class='string val'>&quot;ipWhitelisted&quot;</span><span class='rbrack token'>]</span>
+  <span class='@admin ivar id'>@admin</span> <span class='assign token'>=</span> <span class='entry identifier id'>entry</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='attributes identifier id'>attributes</span><span class='lbrack token'>[</span><span class='string val'>&quot;admin&quot;</span><span class='rbrack token'>]</span>
+  <span class='@change_password_at_next_login ivar id'>@change_password_at_next_login</span> <span class='assign token'>=</span> <span class='entry identifier id'>entry</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='attributes identifier id'>attributes</span><span class='lbrack token'>[</span><span class='string val'>&quot;changePasswordAtNextLogin&quot;</span><span class='rbrack token'>]</span>
+  <span class='@agreed_to_terms ivar id'>@agreed_to_terms</span> <span class='assign token'>=</span> <span class='entry identifier id'>entry</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;apps:login&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='attributes identifier id'>attributes</span><span class='lbrack token'>[</span><span class='string val'>&quot;agreedToTerms&quot;</span><span class='rbrack token'>]</span>
+  <span class='@quota_limit ivar id'>@quota_limit</span> <span class='assign token'>=</span> <span class='entry identifier id'>entry</span><span class='dot token'>.</span><span class='elements identifier id'>elements</span><span class='lbrack token'>[</span><span class='string val'>&quot;apps:quota&quot;</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='attributes identifier id'>attributes</span><span class='lbrack token'>[</span><span class='string val'>&quot;limit&quot;</span><span class='rbrack token'>]</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <span id="admin-instance_method"></span>
+      <div class="method_details first">
+  <p class="signature first" id="admin-instance_method">
+  
+    - (<tt>Object</tt>) <strong>admin</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute admin
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+661
+662
+663</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 661</span>
+
+<span class='def def kw'>def</span> <span class='admin identifier id'>admin</span>
+  <span class='@admin ivar id'>@admin</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="agreed_to_terms-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="agreed_to_terms-instance_method">
+  
+    - (<tt>Object</tt>) <strong>agreed_to_terms</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute agreed_to_terms
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+661
+662
+663</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 661</span>
+
+<span class='def def kw'>def</span> <span class='agreed_to_terms identifier id'>agreed_to_terms</span>
+  <span class='@agreed_to_terms ivar id'>@agreed_to_terms</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="change_password_at_next_login-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="change_password_at_next_login-instance_method">
+  
+    - (<tt>Object</tt>) <strong>change_password_at_next_login</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute change_password_at_next_login
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+661
+662
+663</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 661</span>
+
+<span class='def def kw'>def</span> <span class='change_password_at_next_login identifier id'>change_password_at_next_login</span>
+  <span class='@change_password_at_next_login ivar id'>@change_password_at_next_login</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="family_name-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="family_name-instance_method">
+  
+    - (<tt>Object</tt>) <strong>family_name</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute family_name
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+661
+662
+663</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 661</span>
+
+<span class='def def kw'>def</span> <span class='family_name identifier id'>family_name</span>
+  <span class='@family_name ivar id'>@family_name</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="given_name-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="given_name-instance_method">
+  
+    - (<tt>Object</tt>) <strong>given_name</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute given_name
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+661
+662
+663</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 661</span>
+
+<span class='def def kw'>def</span> <span class='given_name identifier id'>given_name</span>
+  <span class='@given_name ivar id'>@given_name</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="ip_whitelisted-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="ip_whitelisted-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ip_whitelisted</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute ip_whitelisted
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+661
+662
+663</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 661</span>
+
+<span class='def def kw'>def</span> <span class='ip_whitelisted identifier id'>ip_whitelisted</span>
+  <span class='@ip_whitelisted ivar id'>@ip_whitelisted</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="quota_limit-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="quota_limit-instance_method">
+  
+    - (<tt>Object</tt>) <strong>quota_limit</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute quota_limit
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+661
+662
+663</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 661</span>
+
+<span class='def def kw'>def</span> <span class='quota_limit identifier id'>quota_limit</span>
+  <span class='@quota_limit ivar id'>@quota_limit</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="suspended-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="suspended-instance_method">
+  
+    - (<tt>Object</tt>) <strong>suspended</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute suspended
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+661
+662
+663</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 661</span>
+
+<span class='def def kw'>def</span> <span class='suspended identifier id'>suspended</span>
+  <span class='@suspended ivar id'>@suspended</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="username-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="username-instance_method">
+  
+    - (<tt>Object</tt>) <strong>username</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute username
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+661
+662
+663</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/provisioningapi.rb', line 661</span>
+
+<span class='def def kw'>def</span> <span class='username identifier id'>username</span>
+  <span class='@username ivar id'>@username</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+</div>
+    
+    <div id="footer">
+  Generated on Fri Feb 25 09:17:57 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.4 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

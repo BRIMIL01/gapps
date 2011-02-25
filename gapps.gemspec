@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   #s.add_runtime_dependency 'httparty', '>= 0.6.0'
   
   s.add_development_dependency 'rspec', '~> 2.3.0'
+  s.add_development_dependency 'yard'
 
   if RUBY_VERSION >= "1.9"
     s.add_development_dependency 'ruby-debug19'

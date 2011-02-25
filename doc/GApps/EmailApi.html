@@ -1,0 +1,1401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=utf-8" />
+<title>Class: GApps::EmailApi</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (E)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../GApps.html" title="GApps (module)">GApps</a></span></span>
+     &raquo; 
+    <span class="title">EmailApi</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: GApps::EmailApi
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">GApps::EmailApi</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/gapps/emailapi.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="google_host-classvariable" class="">@@google_host =
+          
+        </dt>
+        <dd><pre class="code"><span class='string val'>'apps-apis.google.com'</span>
+</pre></dd>
+      
+        <dt id="google_port-classvariable" class="">@@google_port =
+          
+        </dt>
+        <dd><pre class="code"><span class='integer val'>443</span>
+</pre></dd>
+      
+    </dl>
+  
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_sendas-instance_method" title="#add_sendas (instance method)">- (Object) <strong>add_sendas</strong>(username, name, address, reply_to = nil, make_default = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_filter-instance_method" title="#create_filter (instance method)">- (Object) <strong>create_filter</strong>(username, criteria = {}, actions = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Creates a mail filter in Google Mail.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_label-instance_method" title="#create_label (instance method)">- (Object) <strong>create_label</strong>(username, lbl) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Creates a label in Google Mail.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#disable_forwarding-instance_method" title="#disable_forwarding (instance method)">- (Object) <strong>disable_forwarding</strong>(username) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#disable_imap-instance_method" title="#disable_imap (instance method)">- (Object) <strong>disable_imap</strong>(username) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#disable_pop-instance_method" title="#disable_pop (instance method)">- (Object) <strong>disable_pop</strong>(username) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#disable_vacation_responder-instance_method" title="#disable_vacation_responder (instance method)">- (Object) <strong>disable_vacation_responder</strong>(username) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#disable_webclips-instance_method" title="#disable_webclips (instance method)">- (Object) <strong>disable_webclips</strong>(username) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#enable_forwarding-instance_method" title="#enable_forwarding (instance method)">- (Object) <strong>enable_forwarding</strong>(username, forward_to, action = &quot;ARCHIVE&quot;) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Accepts &quot;KEEP&quot;, &quot;ARCHIVE&quot; or &quot;DELETE&quot; as
+action values.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#enable_imap-instance_method" title="#enable_imap (instance method)">- (Object) <strong>enable_imap</strong>(username) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#enable_pop-instance_method" title="#enable_pop (instance method)">- (Object) <strong>enable_pop</strong>(username, all_mail = true, action = &quot;KEEP&quot;) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Accepts &quot;KEEP&quot;, &quot;ARCHIVE&quot; or &quot;DELETE&quot; as
+action values.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#enable_vacation_responder-instance_method" title="#enable_vacation_responder (instance method)">- (Object) <strong>enable_vacation_responder</strong>(username, subject, message, contacts_only = true) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#enable_webclips-instance_method" title="#enable_webclips (instance method)">- (Object) <strong>enable_webclips</strong>(username) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (EmailApi) <strong>initialize</strong>(mail, passwd, proxy = nil, proxy_port = nil, proxy_user = nil, proxy_passwd = nil) </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+http://code.google.com/apis/apps/email_settings/developers_guide_protocol.html.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_language-instance_method" title="#set_language (instance method)">- (Object) <strong>set_language</strong>(username, language) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+see
+http://code.google.com/apis/apps/email_settings/developers_guide_protocol.html#GA_email_language_tags
+for a list of languages.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_signature-instance_method" title="#set_signature (instance method)">- (Object) <strong>set_signature</strong>(username, signature) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setup_actions-instance_method" title="#setup_actions (instance method)">- (Object) <strong>setup_actions</strong>(domain) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Associates methods, http verbs and URL for REST access.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update_general_settings-instance_method" title="#update_general_settings (instance method)">- (Object) <strong>update_general_settings</strong>(username, settings = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+general settings are pageSize, shortcuts, arrows, snippets and unicode.
+</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="GApps::EmailApi (class)">EmailApi</a></span></tt>) <strong>initialize</strong>(mail, passwd, proxy = nil, proxy_port = nil, proxy_user = nil, proxy_passwd = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+http://code.google.com/apis/apps/email_settings/developers_guide_protocol.html
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10
+11
+12
+13
+14</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 8</span>
+
+<span class='def def kw'>def</span> <span class='initialize identifier id'>initialize</span><span class='lparen token'>(</span><span class='mail identifier id'>mail</span><span class='comma token'>,</span> <span class='passwd identifier id'>passwd</span><span class='comma token'>,</span> <span class='proxy identifier id'>proxy</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='proxy_port identifier id'>proxy_port</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='proxy_user identifier id'>proxy_user</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='proxy_passwd identifier id'>proxy_passwd</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='domain identifier id'>domain</span> <span class='assign token'>=</span> <span class='mail identifier id'>mail</span><span class='dot token'>.</span><span class='split identifier id'>split</span><span class='lparen token'>(</span><span class='string val'>'@'</span><span class='rparen token'>)</span><span class='lbrack token'>[</span><span class='integer val'>1</span><span class='rbrack token'>]</span>
+  <span class='@action ivar id'>@action</span> <span class='assign token'>=</span> <span class='setup_actions identifier id'>setup_actions</span><span class='lparen token'>(</span><span class='domain identifier id'>domain</span><span class='rparen token'>)</span>
+  <span class='conn identifier id'>conn</span> <span class='assign token'>=</span> <span class='Connection constant id'>Connection</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='@@google_host ivar id'>@@google_host</span><span class='comma token'>,</span> <span class='@@google_port ivar id'>@@google_port</span><span class='comma token'>,</span> <span class='mail identifier id'>mail</span><span class='comma token'>,</span> <span class='passwd identifier id'>passwd</span><span class='comma token'>,</span> <span class='proxy identifier id'>proxy</span><span class='comma token'>,</span> <span class='proxy_port identifier id'>proxy_port</span><span class='comma token'>,</span> <span class='proxy_user identifier id'>proxy_user</span><span class='comma token'>,</span> <span class='proxy_passwd identifier id'>proxy_passwd</span><span class='rparen token'>)</span>
+  <span class='@connection ivar id'>@connection</span> <span class='assign token'>=</span> <span class='conn identifier id'>conn</span>
+  <span class='return return kw'>return</span> <span class='@connection ivar id'>@connection</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="add_sendas-instance_method">
+  
+    - (<tt>Object</tt>) <strong>add_sendas</strong>(username, name, address, reply_to = nil, make_default = nil) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+73
+74
+75
+76
+77
+78
+79
+80
+81</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 73</span>
+
+<span class='def def kw'>def</span> <span class='add_sendas identifier id'>add_sendas</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='comma token'>,</span> <span class='name identifier id'>name</span><span class='comma token'>,</span> <span class='address identifier id'>address</span><span class='comma token'>,</span> <span class='reply_to identifier id'>reply_to</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='make_default identifier id'>make_default</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'name'</span><span class='comma token'>,</span> <span class='name identifier id'>name</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'address'</span><span class='comma token'>,</span> <span class='address identifier id'>address</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'replyTo'</span><span class='comma token'>,</span> <span class='reply_to identifier id'>reply_to</span><span class='rparen token'>)</span> <span class='unless unless_mod kw'>unless</span> <span class='reply_to identifier id'>reply_to</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'makeDefault'</span><span class='comma token'>,</span> <span class='make_default identifier id'>make_default</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span> <span class='unless unless_mod kw'>unless</span> <span class='make_default identifier id'>make_default</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:sendas</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/sendas&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="create_filter-instance_method">
+  
+    - (<tt>Object</tt>) <strong>create_filter</strong>(username, criteria = {}, actions = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Creates a mail filter in Google Mail
+</p>
+<pre class="code">
+  <span class='params identifier id'>params</span> <span class='colon op'>:</span>
+    <span class='username identifier id'>username</span>
+    <span class='criteria identifier id'>criteria</span> <span class='can identifier id'>can</span> <span class='include identifier id'>include</span> <span class='the identifier id'>the</span> <span class='following identifier id'>following</span> <span class='keys identifier id'>keys</span><span class='colon op'>:</span>
+    <span class='string val'>'from'</span><span class='comma token'>,</span> <span class='string val'>'to'</span><span class='comma token'>,</span> <span class='string val'>'subject'</span><span class='comma token'>,</span> <span class='string val'>'hasTheWord'</span><span class='comma token'>,</span> <span class='string val'>'doesNotHaveTheWord'</span><span class='comma token'>,</span> <span class='string val'>'hasAttachment'</span>
+    <span class='actions identifier id'>actions</span> <span class='can identifier id'>can</span> <span class='include identifier id'>include</span> <span class='the identifier id'>the</span> <span class='following identifier id'>following</span> <span class='keys identifier id'>keys</span><span class='colon op'>:</span>
+    <span class='string val'>'label'</span><span class='comma token'>,</span> <span class='string val'>'shouldMarkAsRead'</span><span class='comma token'>,</span> <span class='string val'>'shouldArchive'</span>
+  <span class='ex identifier id'>ex</span> <span class='colon op'>:</span>
+    <span class='myapps identifier id'>myapps</span> <span class='assign token'>=</span> <span class='EmailApi constant id'>EmailApi</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='string val'>'root@mydomain.com'</span><span class='comma token'>,</span><span class='string val'>'PaSsWoRd'</span><span class='rparen token'>)</span>
+    <span class='myapps identifier id'>myapps</span><span class='dot token'>.</span><span class='create_filter identifier id'>create_filter</span><span class='lparen token'>(</span><span class='string val'>&quot;someone&quot;</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>'from'</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'someone@somewhere.com'</span><span class='rbrace token'>}</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='string val'>'label'</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'ignore'</span><span class='rbrace token'>}</span><span class='rparen token'>)</span>
+</pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 42</span>
+
+<span class='def def kw'>def</span> <span class='create_filter identifier id'>create_filter</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='comma token'>,</span> <span class='criteria identifier id'>criteria</span><span class='assign token'>=</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='comma token'>,</span> <span class='actions identifier id'>actions</span><span class='assign token'>=</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='rparen token'>)</span>
+  <span class='unless unless kw'>unless</span> <span class='criteria identifier id'>criteria</span><span class='dot token'>.</span><span class='size identifier id'>size</span> <span class='eq op'>==</span> <span class='integer val'>0</span> <span class='and and kw'>and</span> <span class='actions identifier id'>actions</span><span class='dot token'>.</span><span class='size identifier id'>size</span> <span class='eq op'>==</span> <span class='integer val'>0</span>
+    <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+    <span class='allowedCriteria identifier id'>allowedCriteria</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='string val'>'from'</span><span class='comma token'>,</span> <span class='string val'>'to'</span><span class='comma token'>,</span> <span class='string val'>'subject'</span><span class='comma token'>,</span> <span class='string val'>'hasTheWord'</span><span class='comma token'>,</span> <span class='string val'>'doesNotHaveTheWord'</span><span class='comma token'>,</span> <span class='string val'>'hasAttachment'</span><span class='rbrack token'>]</span>
+    <span class='allowedActions identifier id'>allowedActions</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='string val'>'label'</span><span class='comma token'>,</span> <span class='string val'>'shouldMarkAsRead'</span><span class='comma token'>,</span> <span class='string val'>'shouldArchive'</span><span class='rbrack token'>]</span>
+    <span class='criteria identifier id'>criteria</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='k identifier id'>k</span><span class='comma token'>,</span><span class='v identifier id'>v</span><span class='bitor op'>|</span>
+      <span class='if if kw'>if</span> <span class='allowedCriteria identifier id'>allowedCriteria</span><span class='dot token'>.</span><span class='include? fid id'>include?</span><span class='lparen token'>(</span><span class='k identifier id'>k</span><span class='rparen token'>)</span>   
+        <span class='v identifier id'>v</span><span class='dot token'>.</span><span class='tr! fid id'>tr!</span><span class='lparen token'>(</span><span class='string val'>'[]()$&amp;#*'</span><span class='comma token'>,</span> <span class='string val'>''</span><span class='rparen token'>)</span>
+        <span class='if if kw'>if</span> <span class='k identifier id'>k</span> <span class='eq op'>==</span> <span class='string val'>'hasAttachment'</span>
+          <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='k identifier id'>k</span><span class='comma token'>,</span> <span class='v identifier id'>v</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+        <span class='else else kw'>else</span>
+          <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='k identifier id'>k</span><span class='comma token'>,</span> <span class='v identifier id'>v</span><span class='rparen token'>)</span>
+        <span class='end end kw'>end</span>
+      <span class='end end kw'>end</span>
+    <span class='end end kw'>end</span>
+    <span class='actions identifier id'>actions</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='k identifier id'>k</span><span class='comma token'>,</span><span class='v identifier id'>v</span><span class='bitor op'>|</span>
+      <span class='if if kw'>if</span> <span class='allowedActions identifier id'>allowedActions</span><span class='dot token'>.</span><span class='include? fid id'>include?</span><span class='lparen token'>(</span><span class='k identifier id'>k</span><span class='rparen token'>)</span>  
+        <span class='v identifier id'>v</span><span class='dot token'>.</span><span class='tr! fid id'>tr!</span><span class='lparen token'>(</span><span class='string val'>'[]()$&amp;#*'</span><span class='comma token'>,</span> <span class='string val'>''</span><span class='rparen token'>)</span>
+        <span class='if if kw'>if</span> <span class='lbrack token'>[</span><span class='string val'>'shouldMarkAsRead'</span><span class='comma token'>,</span> <span class='string val'>'shouldArchive'</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='include? fid id'>include?</span><span class='lparen token'>(</span><span class='k identifier id'>k</span><span class='rparen token'>)</span>
+          <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='k identifier id'>k</span><span class='comma token'>,</span> <span class='v identifier id'>v</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+        <span class='else else kw'>else</span>
+          <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='k identifier id'>k</span><span class='comma token'>,</span> <span class='v identifier id'>v</span><span class='rparen token'>)</span>
+        <span class='end end kw'>end</span>
+      <span class='end end kw'>end</span>
+    <span class='end end kw'>end</span>
+    <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:filter</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/filter&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+    <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+  <span class='end end kw'>end</span>
+  <span class='return return kw'>return</span> <span class='false false kw'>false</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="create_label-instance_method">
+  
+    - (<tt>Object</tt>) <strong>create_label</strong>(username, lbl) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Creates a label in Google Mail
+</p>
+<pre class="code">
+  <span class='params identifier id'>params</span> <span class='colon op'>:</span>
+    <span class='username identifier id'>username</span>
+    <span class='label identifier id'>label</span>
+  <span class='ex identifier id'>ex</span> <span class='colon op'>:</span>
+    <span class='myapps identifier id'>myapps</span> <span class='assign token'>=</span> <span class='EmailApi constant id'>EmailApi</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='string val'>'root@mydomain.com'</span><span class='comma token'>,</span><span class='string val'>'PaSsWoRd'</span><span class='rparen token'>)</span>
+    <span class='myapps identifier id'>myapps</span><span class='dot token'>.</span><span class='create_label identifier id'>create_label</span><span class='lparen token'>(</span><span class='string val'>&quot;someone&quot;</span><span class='comma token'>,</span> <span class='string val'>'status updates'</span><span class='rparen token'>)</span>
+</pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26
+27
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 24</span>
+
+<span class='def def kw'>def</span> <span class='create_label identifier id'>create_label</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='comma token'>,</span> <span class='lbl identifier id'>lbl</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>&quot;label&quot;</span><span class='comma token'>,</span> <span class='lbl identifier id'>lbl</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:label</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/label&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="disable_forwarding-instance_method">
+  
+    - (<tt>Object</tt>) <strong>disable_forwarding</strong>(username) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+108
+109
+110
+111
+112
+113</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 108</span>
+
+<span class='def def kw'>def</span> <span class='disable_forwarding identifier id'>disable_forwarding</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enable'</span><span class='comma token'>,</span> <span class='string val'>&quot;false&quot;</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:forwarding</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/forwarding&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="disable_imap-instance_method">
+  
+    - (<tt>Object</tt>) <strong>disable_imap</strong>(username) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+140
+141
+142
+143
+144
+145</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 140</span>
+
+<span class='def def kw'>def</span> <span class='disable_imap identifier id'>disable_imap</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enable'</span><span class='comma token'>,</span> <span class='string val'>&quot;false&quot;</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:imap</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/imap&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="disable_pop-instance_method">
+  
+    - (<tt>Object</tt>) <strong>disable_pop</strong>(username) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+126
+127
+128
+129
+130
+131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 126</span>
+
+<span class='def def kw'>def</span> <span class='disable_pop identifier id'>disable_pop</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enable'</span><span class='comma token'>,</span> <span class='string val'>&quot;false&quot;</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:pop</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/pop&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="disable_vacation_responder-instance_method">
+  
+    - (<tt>Object</tt>) <strong>disable_vacation_responder</strong>(username) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+157
+158
+159
+160
+161
+162</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 157</span>
+
+<span class='def def kw'>def</span> <span class='disable_vacation_responder identifier id'>disable_vacation_responder</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enable'</span><span class='comma token'>,</span> <span class='string val'>&quot;false&quot;</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:vacation</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/vacation&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="disable_webclips-instance_method">
+  
+    - (<tt>Object</tt>) <strong>disable_webclips</strong>(username) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+90
+91
+92
+93
+94
+95</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 90</span>
+
+<span class='def def kw'>def</span> <span class='disable_webclips identifier id'>disable_webclips</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enable'</span><span class='comma token'>,</span> <span class='string val'>'false'</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:webclip</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/webclip&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="enable_forwarding-instance_method">
+  
+    - (<tt>Object</tt>) <strong>enable_forwarding</strong>(username, forward_to, action = &quot;ARCHIVE&quot;) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Accepts &quot;KEEP&quot;, &quot;ARCHIVE&quot; or &quot;DELETE&quot; as
+action values
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+99
+100
+101
+102
+103
+104
+105
+106</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 99</span>
+
+<span class='def def kw'>def</span> <span class='enable_forwarding identifier id'>enable_forwarding</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='comma token'>,</span> <span class='forward_to identifier id'>forward_to</span><span class='comma token'>,</span> <span class='action identifier id'>action</span><span class='assign token'>=</span><span class='string val'>&quot;ARCHIVE&quot;</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enable'</span><span class='comma token'>,</span> <span class='string val'>&quot;true&quot;</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'forwardTo'</span><span class='comma token'>,</span> <span class='forward_to identifier id'>forward_to</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'action'</span><span class='comma token'>,</span> <span class='action identifier id'>action</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:forwarding</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/forwarding&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="enable_imap-instance_method">
+  
+    - (<tt>Object</tt>) <strong>enable_imap</strong>(username) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+133
+134
+135
+136
+137
+138</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 133</span>
+
+<span class='def def kw'>def</span> <span class='enable_imap identifier id'>enable_imap</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enable'</span><span class='comma token'>,</span> <span class='string val'>&quot;true&quot;</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:imap</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/imap&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="enable_pop-instance_method">
+  
+    - (<tt>Object</tt>) <strong>enable_pop</strong>(username, all_mail = true, action = &quot;KEEP&quot;) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Accepts &quot;KEEP&quot;, &quot;ARCHIVE&quot; or &quot;DELETE&quot; as
+action values
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+116
+117
+118
+119
+120
+121
+122
+123
+124</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 116</span>
+
+<span class='def def kw'>def</span> <span class='enable_pop identifier id'>enable_pop</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='comma token'>,</span> <span class='all_mail identifier id'>all_mail</span><span class='assign token'>=</span><span class='true true kw'>true</span><span class='comma token'>,</span> <span class='action identifier id'>action</span><span class='assign token'>=</span><span class='string val'>&quot;KEEP&quot;</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enable'</span><span class='comma token'>,</span> <span class='string val'>&quot;true&quot;</span><span class='rparen token'>)</span>
+  <span class='enable_for identifier id'>enable_for</span> <span class='assign token'>=</span> <span class='lparen token'>(</span><span class='all_mail identifier id'>all_mail</span><span class='rparen token'>)</span> <span class='question op'>?</span> <span class='string val'>&quot;ALL_MAIL&quot;</span> <span class='colon op'>:</span> <span class='string val'>&quot;MAIL_FROM_NOW_ON&quot;</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enableFor'</span><span class='comma token'>,</span> <span class='string val'>&quot;enable_for&quot;</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'action'</span><span class='comma token'>,</span> <span class='action identifier id'>action</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:pop</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/pop&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="enable_vacation_responder-instance_method">
+  
+    - (<tt>Object</tt>) <strong>enable_vacation_responder</strong>(username, subject, message, contacts_only = true) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+147
+148
+149
+150
+151
+152
+153
+154
+155</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 147</span>
+
+<span class='def def kw'>def</span> <span class='enable_vacation_responder identifier id'>enable_vacation_responder</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='comma token'>,</span> <span class='subject identifier id'>subject</span><span class='comma token'>,</span> <span class='message identifier id'>message</span><span class='comma token'>,</span> <span class='contacts_only identifier id'>contacts_only</span><span class='assign token'>=</span><span class='true true kw'>true</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enable'</span><span class='comma token'>,</span> <span class='string val'>&quot;true&quot;</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'subject'</span><span class='comma token'>,</span> <span class='subject identifier id'>subject</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'message'</span><span class='comma token'>,</span> <span class='message identifier id'>message</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'contactsOnly'</span><span class='comma token'>,</span> <span class='contacts_only identifier id'>contacts_only</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:vacation</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/vacation&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="enable_webclips-instance_method">
+  
+    - (<tt>Object</tt>) <strong>enable_webclips</strong>(username) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85
+86
+87
+88</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 83</span>
+
+<span class='def def kw'>def</span> <span class='enable_webclips identifier id'>enable_webclips</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'enable'</span><span class='comma token'>,</span> <span class='string val'>'true'</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:webclip</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/webclip&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="set_language-instance_method">
+  
+    - (<tt>Object</tt>) <strong>set_language</strong>(username, language) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+see
+http://code.google.com/apis/apps/email_settings/developers_guide_protocol.html#GA_email_language_tags
+for a list of languages
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+172
+173
+174
+175
+176
+177</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 172</span>
+
+<span class='def def kw'>def</span> <span class='set_language identifier id'>set_language</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='comma token'>,</span> <span class='language identifier id'>language</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'language'</span><span class='comma token'>,</span> <span class='language identifier id'>language</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:language</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/language&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span> 
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="set_signature-instance_method">
+  
+    - (<tt>Object</tt>) <strong>set_signature</strong>(username, signature) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+164
+165
+166
+167
+168
+169</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 164</span>
+
+<span class='def def kw'>def</span> <span class='set_signature identifier id'>set_signature</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='comma token'>,</span> <span class='signature identifier id'>signature</span><span class='rparen token'>)</span>
+  <span class='msg identifier id'>msg</span> <span class='assign token'>=</span> <span class='GEmailMessage constant id'>GEmailMessage</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='string val'>'signature'</span><span class='comma token'>,</span> <span class='signature identifier id'>signature</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:signature</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/signature&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="setup_actions-instance_method">
+  
+    - (<tt>Object</tt>) <strong>setup_actions</strong>(domain) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Associates methods, http verbs and URL for REST access
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 199</span>
+
+<span class='def def kw'>def</span> <span class='setup_actions identifier id'>setup_actions</span><span class='lparen token'>(</span><span class='domain identifier id'>domain</span><span class='rparen token'>)</span><span class='s identifier id'>s</span>
+  <span class='path identifier id'>path</span> <span class='assign token'>=</span> <span class='dstring node'>&quot;/a/feeds/emailsettings/2.0/#{domain}&quot;</span>
+
+  <span class='action identifier id'>action</span> <span class='assign token'>=</span> <span class='Hash constant id'>Hash</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:label</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'POST'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:filter</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'POST'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:sendas</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'POST'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span> 
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:webclip</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'PUT'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:forwarding</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'PUT'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:pop</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'PUT'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:imap</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'PUT'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:vacation</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'PUT'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:signature</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'PUT'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:language</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'PUT'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:general</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'PUT'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='path identifier id'>path</span> <span class='rbrace token'>}</span>
+
+  <span class='comment val'># special action &quot;next&quot; for linked feed results. :path will be affected with URL received in a link tag.</span>
+  <span class='action identifier id'>action</span><span class='lbrack token'>[</span><span class='symbol val'>:next</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span><span class='symbol val'>:method</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'GET'</span><span class='comma token'>,</span> <span class='symbol val'>:path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span><span class='nil nil kw'>nil</span> <span class='rbrace token'>}</span>
+  <span class='return return kw'>return</span> <span class='action identifier id'>action</span>   
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="update_general_settings-instance_method">
+  
+    - (<tt>Object</tt>) <strong>update_general_settings</strong>(username, settings = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+general settings are pageSize, shortcuts, arrows, snippets and unicode
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/gapps/emailapi.rb', line 180</span>
+
+<span class='def def kw'>def</span> <span class='update_general_settings identifier id'>update_general_settings</span><span class='lparen token'>(</span><span class='username identifier id'>username</span><span class='comma token'>,</span> <span class='settings identifier id'>settings</span><span class='assign token'>=</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='rparen token'>)</span>
+  <span class='unless unless kw'>unless</span> <span class='settings identifier id'>settings</span><span class='dot token'>.</span><span class='size identifier id'>size</span> <span class='eq op'>==</span> <span class='integer val'>0</span>
+    <span class='settings identifier id'>settings</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='k identifier id'>k</span><span class='comma token'>,</span><span class='v identifier id'>v</span><span class='bitor op'>|</span>
+      <span class='if if kw'>if</span> <span class='lbrack token'>[</span><span class='string val'>'shortcuts'</span><span class='comma token'>,</span> <span class='string val'>'arrows'</span><span class='comma token'>,</span> <span class='string val'>'snippets'</span><span class='comma token'>,</span> <span class='string val'>'unicode'</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='include? fid id'>include?</span><span class='lparen token'>(</span><span class='k identifier id'>k</span><span class='rparen token'>)</span>
+        <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='k identifier id'>k</span><span class='comma token'>,</span> <span class='v identifier id'>v</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+      <span class='else else kw'>else</span>
+        <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='add_property identifier id'>add_property</span><span class='lparen token'>(</span><span class='k identifier id'>k</span><span class='comma token'>,</span> <span class='v identifier id'>v</span><span class='rparen token'>)</span>
+      <span class='end end kw'>end</span>
+    <span class='end end kw'>end</span>
+    <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='@connection ivar id'>@connection</span><span class='dot token'>.</span><span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='@action ivar id'>@action</span><span class='lbrack token'>[</span><span class='symbol val'>:general</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='dstring node'>&quot;/#{username}/general&quot;</span><span class='comma token'>,</span> <span class='msg identifier id'>msg</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rparen token'>)</span>
+    <span class='return return kw'>return</span> <span class='notop op'>!</span><span class='response identifier id'>response</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+  <span class='end end kw'>end</span>
+  <span class='return return kw'>return</span> <span class='false false kw'>false</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Fri Feb 25 09:17:56 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.4 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>
