@@ -754,7 +754,7 @@ module GApps #:nodoc:
   end
 
 
-  class RequestMessage < Document #:nodoc:
+  class RequestMessage < REXML::Document #:nodoc:
     # Request message constructor.
     # parameter type : "user", "nickname" or "emailList"  
 

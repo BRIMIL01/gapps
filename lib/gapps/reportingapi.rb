@@ -27,7 +27,7 @@ module GApps
     end
   end
 
-  class GReportMessage < Document #:nodoc:
+  class GReportMessage < REXML::Document #:nodoc:
     def initialize
       super '<?xml version="1.0" encoding="UTF-8"?>' 
       self.add_element "rest", {"xmlns" => "google:accounts:rest:protocol", "xmlns:xsi" => "http://www.w3.org/2001/XMLSchema-instance"}
