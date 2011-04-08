@@ -2,8 +2,6 @@ require 'net/https'
 require 'cgi'
 require 'rexml/document'
 
-include REXML
-
 module GApps #:nodoc:
   class Connection
     attr_reader :http_connection
@@ -92,7 +90,7 @@ module GApps #:nodoc:
       end
 
       begin
-        xml = Document.new(response.body)
+        xml = REXML::Document.new(response.body)
       rescue Exception => e
         STDERR.puts "Error processing response: ", e
         return nil
