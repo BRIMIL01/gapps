@@ -196,7 +196,7 @@ module GApps
     private #:nodoc:
 
     # Associates methods, http verbs and URL for REST access
-    def setup_actions(domain)s
+    def setup_actions(domain)
       path = "/a/feeds/emailsettings/2.0/#{domain}"
 
       action = Hash.new
